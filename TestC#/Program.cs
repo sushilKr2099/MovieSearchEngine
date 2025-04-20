@@ -1,4 +1,6 @@
 using Microsoft.AspNetCore.Builder;
+using TestC_.Interface;
+using TestC_.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 var apiCorsPolicy = "ApiCorsPolicy";
@@ -9,6 +11,8 @@ var apiCorsPolicy = "ApiCorsPolicy";
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddScoped<IMovieService, MovieService>();
+
 
 builder.Services.AddCors(options =>
 {
