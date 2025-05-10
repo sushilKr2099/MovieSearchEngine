@@ -64,4 +64,5 @@ MovieSearchEngine/
 For any inquiries or feedback, feel free to reach out:
 
 **Author**: Sushil Kumar
+
 **GitHub**: @sushilKr2099
